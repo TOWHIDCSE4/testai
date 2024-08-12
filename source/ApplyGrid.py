@@ -1,6 +1,6 @@
 import numpy as np 
 import cv2 
-import config as cfg
+from . import config as cfg
 
 
 class applyGrid():
