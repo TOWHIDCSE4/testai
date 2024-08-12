@@ -1,4 +1,4 @@
-source/weights/best.pt
+best.pt
 distance_calculation
 source/__pycache__/ApplyGrid.cpython-310.pyc
 source/__pycache__/CircleDetection.cpython-310.pyc

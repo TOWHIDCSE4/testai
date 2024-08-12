@@ -29,16 +29,26 @@ def cv2_image_to_base64(cv2_img) -> str:
     img_base64 = base64.b64encode(buffer).decode('utf-8')
     return img_base64
 
+
+@app.get("/")
+async def test_route():
+    return {"message": "This is a test route!"}
+
+
+
 @app.post("/distance_measure/")
 async def distance_measure(image_data: ImageBase64):
-    # Convert base64 image to OpenCV format
-    cv2_img = base64_to_cv2_image(image_data.image_base64)
-    
-    distance_measure_cls.get_utils(image=cv2_img)
-    json_ = distance_measure_cls.draw_distance()
-    
-
-    return json_
+    try:
+        # Convert base64 image to OpenCV format
+        cv2_img = base64_to_cv2_image(image_data.image_base64)
+        
+        # Measure distance
+        distance_measure_cls.get_utils(image=cv2_img)
+        json_ = distance_measure_cls.draw_distance()
+        
+        return json_
+    except Exception as e:
+        return {"error": str(e)}
 
 if __name__ == "__main__":
     import uvicorn

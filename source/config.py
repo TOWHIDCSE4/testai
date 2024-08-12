@@ -20,7 +20,7 @@ grid_circle_radius = 10  # Radius of the circles
 grid_circle_thickness = 2  # Thickness of the circle edges
 
 # Define circle parameters
-ckpt_path="/home/srv/Work/PythonScript/distance_calculation/source/weights/best.pt"
+ckpt_path="/home/mahedi/projects/personal project/towhid_sourob/full project/testai/best.pt"
 dp=1.30
 minDist=2100
 param1=48
