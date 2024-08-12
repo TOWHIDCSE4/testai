@@ -9,8 +9,8 @@
     ```     
 - Then run below command to run the model
     ```
-    python source/DistanceMeasure.py image/IMG_6893.jpg --save
+    python api.py
 
     ```
-- Then image will save at ``` result/distance_mm.jpg ``` 
+
 
