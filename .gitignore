@@ -1,2 +1,6 @@
 source/weights/best.pt
 distance_calculation
+source/__pycache__/ApplyGrid.cpython-310.pyc
+source/__pycache__/CircleDetection.cpython-310.pyc
+source/__pycache__/ExtractImage.cpython-310.pyc
+source/__pycache__/config.cpython-310.pyc
