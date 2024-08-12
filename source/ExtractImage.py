@@ -1,6 +1,6 @@
 import cv2 
 import numpy as np
-import config as cfg
+from . import config as cfg
 
 
 class extractImage():
@@ -15,8 +15,8 @@ class extractImage():
 
         return corners, ids, rejected
 
-    def extract(self, image_path,save = True):
-        image = cv2.imread(image_path)
+    def extract(self, image,save = True):
+        # image = cv2.imread(image_path)
 
         corners, ids, rejected = self.detect_marker(image=image)
 
