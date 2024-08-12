@@ -7,6 +7,10 @@
     pip install -r requirement.txt
 
     ```     
+- Move the weight into this folder
+    ```
+    source/weights/best.pt
+    ```
 - Then run below command to run the model
     ```
     python api.py
